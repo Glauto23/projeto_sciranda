@@ -1,0 +1,4 @@
+Elevator Positioning;10;1
+Constant Speed Movement;1000;50
+Shear Ramp;Linear;Rotation;1000;2000;50;10;[1000 1100 1200 1300 1400 1500 1600 1700 1800 1900 2000]
+Shear Step;Rotation;1000;2000;10;5;[1000 1200 1400 1600 1800 2000]
