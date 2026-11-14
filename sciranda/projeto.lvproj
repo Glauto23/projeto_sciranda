@@ -19,6 +19,7 @@
 				<Item Name="ShearRampStepConfigUI .vi" Type="VI" URL="../subVIs/UI Screens/ShearRampStepConfigUI .vi"/>
 				<Item Name="CreateShearRampStepVisualizationGraph.vi" Type="VI" URL="../subVIs/UI Screens/CreateShearRampStepVisualizationGraph.vi"/>
 				<Item Name="UIControlReferences.ctl" Type="VI" URL="../subVIs/TypeDefs/UIControlReferences.ctl"/>
+				<Item Name="Analog UI Settings.vi" Type="VI" URL="../subVIs/UI Screens/Analog UI Settings.vi"/>
 			</Item>
 			<Item Name="TypeDefs" Type="Folder">
 				<Item Name="ElevatorPositionConfiguration.ctl" Type="VI" URL="../subVIs/TypeDefs/ElevatorPositionConfiguration.ctl"/>
@@ -26,6 +27,7 @@
 				<Item Name="ShearRampConfiguration.ctl" Type="VI" URL="../subVIs/TypeDefs/ShearRampConfiguration.ctl"/>
 				<Item Name="ShearRampStepConfiguration.ctl" Type="VI" URL="../subVIs/TypeDefs/ShearRampStepConfiguration.ctl"/>
 				<Item Name="Tester Object.ctl" Type="VI" URL="../subVIs/TypeDefs/Tester Object.ctl"/>
+				<Item Name="Device Settings.ctl" Type="VI" URL="../subVIs/TypeDefs/Device Settings.ctl"/>
 			</Item>
 			<Item Name="Custom Controls" Type="Folder">
 				<Item Name="Stop button.ctl" Type="VI" URL="../Custom controls/Stop button.ctl"/>
@@ -69,36 +71,70 @@
 				<Item Name="FGV Get Key Value.vi" Type="VI" URL="../subVIs/File Operations/FGV Get Key Value.vi"/>
 				<Item Name="Get Key Values from Session.vi" Type="VI" URL="../subVIs/File Operations/Get Key Values from Session.vi"/>
 				<Item Name="FGV INI Values Action.ctl" Type="VI" URL="../subVIs/File Operations/FGV INI Values Action.ctl"/>
+				<Item Name="Get Key Values.vi" Type="VI" URL="../subVIs/File Operations/Get Key Values.vi"/>
+				<Item Name="Get Keys from Session .vi" Type="VI" URL="../subVIs/File Operations/Get Keys from Session .vi"/>
+				<Item Name="Read All Sessions Keys and Values.vi" Type="VI" URL="../subVIs/File Operations/Read All Sessions Keys and Values.vi"/>
+				<Item Name="Read Key Value.vi" Type="VI" URL="../subVIs/File Operations/Read Key Value.vi"/>
 			</Item>
-			<Item Name="Modbus" Type="Folder">
-				<Item Name="MB Shutdown.vi" Type="VI" URL="../subVIs/Modbus/MB Shutdown.vi"/>
-				<Item Name="MB Write Single Hold Registers.vi" Type="VI" URL="../subVIs/Modbus/MB Write Single Hold Registers.vi"/>
-				<Item Name="MB Read Multi Hold Registers.vi" Type="VI" URL="../subVIs/Modbus/MB Read Multi Hold Registers.vi"/>
-				<Item Name="MB Read Hold Register.vi" Type="VI" URL="../subVIs/Modbus/MB Read Hold Register.vi"/>
-				<Item Name="MB Read Coil.vi" Type="VI" URL="../subVIs/Modbus/MB Read Coil.vi"/>
-				<Item Name="MB Write Coil.vi" Type="VI" URL="../subVIs/Modbus/MB Write Coil.vi"/>
-				<Item Name="MB Read Multi Coils.vi" Type="VI" URL="../subVIs/Modbus/MB Read Multi Coils.vi"/>
-				<Item Name="Modbus UI Settings.vi" Type="VI" URL="../subVIs/UI Screens/Modbus UI Settings.vi"/>
-				<Item Name="Read Modbus Settings.vi" Type="VI" URL="../subVIs/Modbus/Read Modbus Settings.vi"/>
-				<Item Name="Modbus Config File Path.vi" Type="VI" URL="../subVIs/Modbus/Modbus Config File Path.vi"/>
-				<Item Name="MB Open Connection.vi" Type="VI" URL="../subVIs/Modbus/MB Open Connection.vi"/>
-				<Item Name="Modbus Cluster.ctl" Type="VI" URL="../subVIs/Modbus/Modbus Cluster.ctl"/>
-			</Item>
-			<Item Name="DAQ" Type="Folder">
-				<Item Name="DAQNav" Type="Folder">
-					<Item Name="DAQNav Cluster.ctl" Type="VI" URL="../subVIs/DAQ/DAQNav/DAQNav Cluster.ctl"/>
-					<Item Name="Devices Cluster.ctl" Type="VI" URL="../subVIs/TypeDefs/Devices Cluster.ctl"/>
+			<Item Name="Devices" Type="Folder">
+				<Item Name="DAQ" Type="Folder">
+					<Item Name="DAQNav" Type="Folder">
+						<Item Name="DAQNav Cluster.ctl" Type="VI" URL="../subVIs/DAQ/DAQNav/DAQNav Cluster.ctl"/>
+						<Item Name="Devices Cluster.ctl" Type="VI" URL="../subVIs/TypeDefs/Devices Cluster.ctl"/>
+						<Item Name="Create AO Resource.vi" Type="VI" URL="../subVIs/DAQ/DAQNav/Analog Output/Create AO Resource.vi"/>
+						<Item Name="Create AI Resource.vi" Type="VI" URL="../subVIs/DAQ/DAQNav/Create AI Resource.vi"/>
+					</Item>
 				</Item>
+				<Item Name="Modbus" Type="Folder">
+					<Item Name="MB Shutdown.vi" Type="VI" URL="../subVIs/Modbus/MB Shutdown.vi"/>
+					<Item Name="MB Write Single Hold Registers.vi" Type="VI" URL="../subVIs/Modbus/MB Write Single Hold Registers.vi"/>
+					<Item Name="MB Read Multi Hold Registers.vi" Type="VI" URL="../subVIs/Modbus/MB Read Multi Hold Registers.vi"/>
+					<Item Name="MB Read Hold Register.vi" Type="VI" URL="../subVIs/Modbus/MB Read Hold Register.vi"/>
+					<Item Name="MB Read Coil.vi" Type="VI" URL="../subVIs/Modbus/MB Read Coil.vi"/>
+					<Item Name="MB Write Coil.vi" Type="VI" URL="../subVIs/Modbus/MB Write Coil.vi"/>
+					<Item Name="MB Read Multi Coils.vi" Type="VI" URL="../subVIs/Modbus/MB Read Multi Coils.vi"/>
+					<Item Name="Modbus UI Settings.vi" Type="VI" URL="../subVIs/UI Screens/Modbus UI Settings.vi"/>
+					<Item Name="Read Modbus Settings.vi" Type="VI" URL="../subVIs/Modbus/Read Modbus Settings.vi"/>
+					<Item Name="Modbus Config File Path.vi" Type="VI" URL="../subVIs/Modbus/Modbus Config File Path.vi"/>
+					<Item Name="MB Open Connection.vi" Type="VI" URL="../subVIs/Modbus/MB Open Connection.vi"/>
+					<Item Name="Modbus Cluster.ctl" Type="VI" URL="../subVIs/Modbus/Modbus Cluster.ctl"/>
+				</Item>
+				<Item Name="Get Device Settings.vi" Type="VI" URL="../subVIs/Devices/Get Device Settings.vi"/>
+				<Item Name="Get Device Settings from INI File.vi" Type="VI" URL="../subVIs/File Operations/Get Device Settings from INI File.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Simulator" Type="Folder">
 			<Item Name="Modbus Slave Simulator.vi" Type="VI" URL="../subVIs/Simulator/Modbus Slave Simulator.vi"/>
 			<Item Name="update values.vi" Type="VI" URL="../subVIs/Simulator/update values.vi"/>
+			<Item Name="Modbus Slave.vi" Type="VI" URL="../subVIs/Simulator/Modbus Slave.vi"/>
 		</Item>
 		<Item Name="Config Files" Type="Folder" URL="../Config Files">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Main UI.vi" Type="VI" URL="../Main UI.vi"/>
+		<Item Name="Device INI path.vi" Type="VI" URL="../subVIs/Devices/Device INI path.vi"/>
+		<Item Name="Read Input and Output Config File.vi" Type="VI" URL="../subVIs/File Operations/Read Input and Output Config File.vi"/>
+		<Item Name="Analog Cluster.ctl" Type="VI" URL="../subVIs/DAQ/DAQNav/Analog Cluster.ctl"/>
+		<Item Name="Get Analog Cluster.vi" Type="VI" URL="../subVIs/DAQ/Get Analog Cluster.vi"/>
+		<Item Name="Modbus Address Cluster.ctl" Type="VI" URL="../subVIs/Modbus/Modbus Address Cluster.ctl"/>
+		<Item Name="Get MB HR and Coils.vi" Type="VI" URL="../subVIs/Modbus/Get MB HR and Coils.vi"/>
+		<Item Name="Convert to MB Address Cluster.vi" Type="VI" URL="../subVIs/Modbus/Convert to MB Address Cluster.vi"/>
+		<Item Name="Get MB Address from Parameter Name.vi" Type="VI" URL="../subVIs/Modbus/Get MB Address from Parameter Name.vi"/>
+		<Item Name="Read Analog Input and Control Config.vi" Type="VI" URL="../subVIs/DAQ/DAQNav/Read Analog Input and Control Config.vi"/>
+		<Item Name="Read Single Analog Input.vi" Type="VI" URL="../subVIs/DAQ/DAQNav/Read Single Analog Input.vi"/>
+		<Item Name="Write to AO Channel.vi" Type="VI" URL="../subVIs/DAQ/DAQNav/Write to AO Channel.vi"/>
+		<Item Name="Get a Single Analog Cluster.vi" Type="VI" URL="../subVIs/DAQ/DAQNav/Get a Single Analog Cluster.vi"/>
+		<Item Name="Modbus Master.vi" Type="VI" URL="../subVIs/Simulator/Modbus Master.vi"/>
+		<Item Name="Read Boolean Control Value.vi" Type="VI" URL="../subVIs/UI Controls Function/Read Boolean Control Value.vi"/>
+		<Item Name="readValue_seqStopButton.vi" Type="VI" URL="../subVIs/UI Controls Function/readValue_seqStopButton.vi"/>
+		<Item Name="Write Boolean Control Value.vi" Type="VI" URL="../subVIs/UI Controls Function/Write Boolean Control Value.vi"/>
+		<Item Name="Read Analog Input.vi" Type="VI" URL="../subVIs/DAQ/DAQNav/Read Analog Input.vi"/>
+		<Item Name="Scale Analog Input.vi" Type="VI" URL="../subVIs/DAQ/DAQNav/Scale Analog Input.vi"/>
+		<Item Name="DAQ Variable Control.vi" Type="VI" URL="../subVIs/DAQ/DAQ Variable Control.vi"/>
+		<Item Name="Compare Value to Limits.vi" Type="VI" URL="../subVIs/DAQ/Compare Value to Limits.vi"/>
+		<Item Name="Convert RPM to Analog Voltage.vi" Type="VI" URL="../subVIs/DAQ/Convert RPM to Analog Voltage.vi"/>
+		<Item Name="Modbus Slave Write Server Register.vi" Type="VI" URL="../subVIs/Simulator/Modbus Slave Write Server Register.vi"/>
+		<Item Name="UI Servo Parameters Monitor .vi" Type="VI" URL="../subVIs/UI Screens/UI Servo Parameters Monitor .vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
@@ -202,6 +238,7 @@
 				<Item Name="DTbl Digital to Binary U32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital to Binary U32.vi"/>
 				<Item Name="DWDT Digital to Binary U32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital to Binary U32.vi"/>
 				<Item Name="Digital to Binary.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Digital to Binary.vi"/>
+				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="DN4_GetErrorPosition.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/component/DN4_GetErrorPosition.vi"/>
@@ -276,10 +313,104 @@
 				<Item Name="DAQNavi Read (Analog 1D U16 NChan NSamp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/read/DAQNavi Read (Analog 1D U16 NChan NSamp).vi"/>
 				<Item Name="DAQNavi Read (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/read/DAQNavi Read (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQNavi Read.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/read/DAQNavi Read.vi"/>
-				<Item Name="BioIsFailed.vi" Type="VI" URL="/&lt;userlib&gt;/_express/AdvComponent/BioIsFailed.vi"/>
-				<Item Name="ToErrorCluster.vi" Type="VI" URL="/&lt;userlib&gt;/_express/AdvComponent/ToErrorCluster.vi"/>
 				<Item Name="DAQNaviGet_Buffered_CO_ChannelStart.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_ChannelStart.vi"/>
 				<Item Name="DAQNaviGet_Buffered_CO_ChannelCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_ChannelCount.vi"/>
+				<Item Name="DAQNaviGet_AO_ChannelCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ChannelCount.vi"/>
+				<Item Name="DAQNaviGet_AI_ConvertClock_AvailableData.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ConvertClock_AvailableData.vi"/>
+				<Item Name="DAQNavi Enum To String.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/component/DAQNavi Enum To String.vi"/>
+				<Item Name="DAQNaviGet_SignalSource.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/Device/DAQNaviGet_SignalSource.vi"/>
+				<Item Name="DAQNaviGet_SignalNoiseFilterBlockTime.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/Device/DAQNaviGet_SignalNoiseFilterBlockTime.vi"/>
+				<Item Name="DAQNaviGet_ProgrammableSignalsDirection.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/Device/DAQNaviGet_ProgrammableSignalsDirection.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_PwmTimeup.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_PwmTimeup.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_FreqTimeup.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_FreqTimeup.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_PulseWidth.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_PulseWidth.vi"/>
+				<Item Name="DAQNaviGet_AI_BurnShortRetValue.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_BurnShortRetValue.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CO_Trigger_Source.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_Trigger_Source.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CO_Trigger_Level.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_Trigger_Level.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CO_Trigger_Edge.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_Trigger_Edge.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CO_Trigger_Action.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_Trigger_Action.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CO_SampleClock_Source.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_SampleClock_Source.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CO_SampleClock_Samples.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_SampleClock_Samples.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CO_SampleClock_Mode.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_Buffered_CO_SampleClock_Mode.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CI_Trigger_Source.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_Buffered_CI_Trigger_Source.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CI_Trigger_Level.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_Buffered_CI_Trigger_Level.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CI_Trigger_Edge.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_Buffered_CI_Trigger_Edge.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CI_Trigger_Action.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_Buffered_CI_Trigger_Action.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CI_SampleClock_Source.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_Buffered_CI_SampleClock_Source.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CI_Record_SectionLength.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_Buffered_CI_Record_SectionLength.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CI_Record_SectionCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_Buffered_CI_Record_SectionCount.vi"/>
+				<Item Name="DAQNaviGet_Buffered_CI_Channel_NoiseFiltered.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_Buffered_CI_Channel_NoiseFiltered.vi"/>
+				<Item Name="DAQNaviGet_AI_ValueRange_Information.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ValueRange_Information.vi"/>
+				<Item Name="DAQNaviGet_Device_SupportedDevices_Ex.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/Device/DAQNaviGet_Device_SupportedDevices_Ex.vi"/>
+				<Item Name="DAQNaviGet_AI_ConvertClock_SectionLength.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ConvertClock_SectionLength.vi"/>
+				<Item Name="DAQNaviGet_AI_ConvertClock_SectionCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ConvertClock_SectionCount.vi"/>
+				<Item Name="DAQNaviGet_AI_ConvertClock_Cycles.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ConvertClock_Cycles.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_NoiseFiltered.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_NoiseFiltered.vi"/>
+				<Item Name="DAQNaviGet_CO_Channel_PulseWidth.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_CO_Channel_PulseWidth.vi"/>
+				<Item Name="DAQNaviGet_CO_Channel_FreqValue.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_CO_Channel_FreqValue.vi"/>
+				<Item Name="DAQNaviGet_CO_Channel_DelayCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_CO_Channel_DelayCount.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_UpDownCounterSignalCountingType.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_UpDownCounterSignalCountingType.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_UpDownCounterResetTimesByIndex.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_UpDownCounterResetTimesByIndex.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_UpDownCounterInitialValue.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_UpDownCounterInitialValue.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_UpDownCounterCompareTable.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_UpDownCounterCompareTable.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_UpDownCounterCompareMode.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_UpDownCounterCompareMode.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_UpDownCompareInterval.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_UpDownCompareInterval.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_FreqMeasureMethod.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_FreqMeasureMethod.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel_CollectionPeriod.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel_CollectionPeriod.vi"/>
+				<Item Name="DAQNaviGet_CO_ChannelCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_CO_ChannelCount.vi"/>
+				<Item Name="DAQNaviGet_AI_FilterCutoffFreq1.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_FilterCutoffFreq1.vi"/>
+				<Item Name="DAQNaviGet_AI_FilterCutoffFreq.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_FilterCutoffFreq.vi"/>
+				<Item Name="DAQNaviGet_AI_FilterType.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_FilterType.vi"/>
+				<Item Name="DAQNaviGet_AI_ImpedanceType.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ImpedanceType.vi"/>
+				<Item Name="DAQNaviGet_AI_IEPEType.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_IEPEType.vi"/>
+				<Item Name="DAQNaviGet_AI_CouplingType.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_CouplingType.vi"/>
+				<Item Name="DAQNaviGet_CI_EventRefnum.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_EventRefnum.vi"/>
+				<Item Name="DAQNaviGet_CI_UpDownCounterEventsToSnap.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_UpDownCounterEventsToSnap.vi"/>
+				<Item Name="DAQNaviGet_CO_EventRefnum.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_CO_EventRefnum.vi"/>
+				<Item Name="DAQNaviGet_CO_Channel.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CO/DAQNaviGet_CO_Channel.vi"/>
+				<Item Name="DAQNaviGet_CI_Channel.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/CI/DAQNaviGet_CI_Channel.vi"/>
+				<Item Name="DAQNaviGet_DO_PortDirection.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DO/DAQNaviGet_DO_PortDirection.vi"/>
+				<Item Name="DAQNaviGet_DO_PortStart.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DO/DAQNaviGet_DO_PortStart.vi"/>
+				<Item Name="DAQNaviGet_DI_EventRefnum.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_EventRefnum.vi"/>
+				<Item Name="DAQNaviGet_DI_Interrupt_TriggerEdge.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_Interrupt_TriggerEdge.vi"/>
+				<Item Name="DAQNaviGet_DI_PortDirection.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_PortDirection.vi"/>
+				<Item Name="DAQNaviGet_DI_NoiseFilter_Enabled.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_NoiseFilter_Enabled.vi"/>
+				<Item Name="DAQNaviGet_DI_Interrupt_Enabled.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_Interrupt_Enabled.vi"/>
+				<Item Name="DAQNaviGet_DI_Interrupt_Gated.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_Interrupt_Gated.vi"/>
+				<Item Name="DAQNaviGet_DI_StatusChange_Mask.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_StatusChange_Mask.vi"/>
+				<Item Name="DAQNaviGet_DI_PatternMatch_Pattern.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_PatternMatch_Pattern.vi"/>
+				<Item Name="DAQNaviGet_DI_PatternMatch_Mask.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_PatternMatch_Mask.vi"/>
+				<Item Name="DAQNaviGet_DI_PortStart.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DI/DAQNaviGet_DI_PortStart.vi"/>
+				<Item Name="DAQNaviGet_AO_RegenMode.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_RegenMode.vi"/>
+				<Item Name="DAQNaviGet_AO_Trigger_Source.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_Trigger_Source.vi"/>
+				<Item Name="DAQNaviGet_AO_Trigger_Level.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_Trigger_Level.vi"/>
+				<Item Name="DAQNaviGet_AO_Trigger_Edge.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_Trigger_Edge.vi"/>
+				<Item Name="DAQNaviGet_AO_Trigger_DelayCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_Trigger_DelayCount.vi"/>
+				<Item Name="DAQNaviGet_AO_Trigger_Action.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_Trigger_Action.vi"/>
+				<Item Name="DAQNaviGet_AO_ConvertClock_Source.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ConvertClock_Source.vi"/>
+				<Item Name="DAQNaviGet_AO_ConvertClock_Samples.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ConvertClock_Samples.vi"/>
+				<Item Name="DAQNaviGet_AO_ConvertClock_Rate.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ConvertClock_Rate.vi"/>
+				<Item Name="DAQNaviGet_AO_ConvertClock_Mode.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ConvertClock_Mode.vi"/>
+				<Item Name="DAQNaviGet_AO_ExtRefValueForUnipolar.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ExtRefValueForUnipolar.vi"/>
+				<Item Name="DAQNaviGet_AO_ExtRefValueForBipolar.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ExtRefValueForBipolar.vi"/>
+				<Item Name="DAQNaviGet_AO_ChannelStart.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ChannelStart.vi"/>
+				<Item Name="DAQNaviGet_AO_ValueRange.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ValueRange.vi"/>
+				<Item Name="DAQNaviGet_AI_ConvertClock_Source.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ConvertClock_Source.vi"/>
+				<Item Name="DAQNaviGet_AI_CjcSetting_Value.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_CjcSetting_Value.vi"/>
+				<Item Name="DAQNaviGet_AI_CjcSetting_Channel.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_CjcSetting_Channel.vi"/>
+				<Item Name="DAQNaviGet_AI_Trigger_DelayCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_Trigger_DelayCount.vi"/>
+				<Item Name="DAQNaviGet_AI_Trigger_Action.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_Trigger_Action.vi"/>
+				<Item Name="DAQNaviGet_AI_Trigger_Level.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_Trigger_Level.vi"/>
+				<Item Name="DAQNaviGet_AI_Trigger_Edge.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_Trigger_Edge.vi"/>
+				<Item Name="DAQNaviGet_AI_Trigger_Source.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_Trigger_Source.vi"/>
+				<Item Name="DAQNaviGet_AI_ChannelStart.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ChannelStart.vi"/>
+				<Item Name="DAQNaviGet_AI_BurnoutRetValue.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_BurnoutRetValue.vi"/>
+				<Item Name="DAQNaviGet_AI_BurnoutRetType.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_BurnoutRetType.vi"/>
+				<Item Name="DAQNaviGet_AI_ValueRange.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_ValueRange.vi"/>
+				<Item Name="DAQNaviGet_AI_SignalType.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AI/DAQNaviGet_AI_SignalType.vi"/>
+				<Item Name="DAQNavi Get Property-v001.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/DAQNavi Get Property-v001.vi"/>
+				<Item Name="BioIsFailed.vi" Type="VI" URL="/&lt;userlib&gt;/_express/AdvComponent/BioIsFailed.vi"/>
+				<Item Name="ToErrorCluster.vi" Type="VI" URL="/&lt;userlib&gt;/_express/AdvComponent/ToErrorCluster.vi"/>
 				<Item Name="DAQNavi Write (Buffered Counter Pulse Width).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Buffered Counter Pulse Width).vi"/>
 				<Item Name="DN4_CheckSamplesCountAndChannelsCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/component/DN4_CheckSamplesCountAndChannelsCount.vi"/>
 				<Item Name="DN4_2DarrayTo1DarrayUint8.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/component/DN4_2DarrayTo1DarrayUint8.vi"/>
@@ -293,7 +424,6 @@
 				<Item Name="DAQNavi Write (Digital 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Digital 1D Wfm NChan NSamp).vi"/>
 				<Item Name="DAQNavi Write (Digital 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Digital 1D Wfm NChan 1Samp).vi"/>
 				<Item Name="DAQNavi Write (Digital 1D U8 1Chan NSamp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Digital 1D U8 1Chan NSamp).vi"/>
-				<Item Name="DAQNaviGet_AO_ChannelCount.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/DAQNavi Get Property/AO/DAQNaviGet_AO_ChannelCount.vi"/>
 				<Item Name="DAQNavi Write (Analog Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Analog Wfm 1Chan NSamp).vi"/>
 				<Item Name="DAQNavi Write (Analog 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Analog 1D Wfm NChan NSamp).vi"/>
 				<Item Name="DAQNavi Write (Analog 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Analog 1D Wfm NChan 1Samp).vi"/>
