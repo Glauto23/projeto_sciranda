@@ -108,6 +108,21 @@
 			<Item Name="update values.vi" Type="VI" URL="../subVIs/Simulator/update values.vi"/>
 			<Item Name="Modbus Slave.vi" Type="VI" URL="../subVIs/Simulator/Modbus Slave.vi"/>
 		</Item>
+		<Item Name="Hardware Abstraction Layer" Type="Folder">
+			<Item Name="AnalogInput.lvclass" Type="LVClass" URL="../AnalogInput/AnalogInput.lvclass"/>
+			<Item Name="AnalogOutput.lvclass" Type="LVClass" URL="../AnalogOutput/AnalogOutput.lvclass"/>
+			<Item Name="DAQNavi_AI.lvclass" Type="LVClass" URL="../DAQNavi_AI.lvclass/DAQNavi_AI.lvclass"/>
+			<Item Name="DAQNavi_AO.lvclass" Type="LVClass" URL="../DAQNavi_AO.lvclass/DAQNavi_AO.lvclass"/>
+		</Item>
+		<Item Name="Device Layer" Type="Folder">
+			<Item Name="Motor.lvclass" Type="LVClass" URL="../Motor/Motor.lvclass"/>
+			<Item Name="Elevator.lvclass" Type="LVClass" URL="../Elevator/Elevator.lvclass"/>
+		</Item>
+		<Item Name="Test Bench VIs" Type="Folder">
+			<Item Name="Analog Test Bench.vi" Type="VI" URL="../Test Bench VIs/Analog Test Bench.vi"/>
+			<Item Name="Motor Test Bench.vi" Type="VI" URL="../Test Bench VIs/Motor Test Bench.vi"/>
+			<Item Name="Elevator Test Bench.vi" Type="VI" URL="../Test Bench VIs/Elevator Test Bench.vi"/>
+		</Item>
 		<Item Name="Config Files" Type="Folder" URL="../Config Files">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -135,6 +150,7 @@
 		<Item Name="Convert RPM to Analog Voltage.vi" Type="VI" URL="../subVIs/DAQ/Convert RPM to Analog Voltage.vi"/>
 		<Item Name="Modbus Slave Write Server Register.vi" Type="VI" URL="../subVIs/Simulator/Modbus Slave Write Server Register.vi"/>
 		<Item Name="UI Servo Parameters Monitor .vi" Type="VI" URL="../subVIs/UI Screens/UI Servo Parameters Monitor .vi"/>
+		<Item Name="Motor_DAQNav.lvclass" Type="LVClass" URL="../Motor_DAQNav/Motor_DAQNav.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
@@ -438,6 +454,7 @@
 				<Item Name="DAQNavi Write (Analog DBL 1Chan 1Samp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Analog DBL 1Chan 1Samp).vi"/>
 				<Item Name="DAQNavi Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQNavi Write.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/write/DAQNavi Write.vi"/>
+				<Item Name="DAQNavi Clear Task.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/task/DAQNavi Clear Task.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="DAQNavi_LV.dll" Type="Document" URL="DAQNavi_LV.dll">
