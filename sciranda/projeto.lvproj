@@ -126,6 +126,10 @@
 		<Item Name="Config Files" Type="Folder" URL="../Config Files">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Config File Operations" Type="Folder">
+			<Item Name="Map Path.vi" Type="VI" URL="../Config_Files_Operation/Map Path.vi"/>
+			<Item Name="Load_Hardware_Config.vi" Type="VI" URL="../Config_Files_Operation/Load_Hardware_Config.vi"/>
+		</Item>
 		<Item Name="Main UI.vi" Type="VI" URL="../Main UI.vi"/>
 		<Item Name="Device INI path.vi" Type="VI" URL="../subVIs/Devices/Device INI path.vi"/>
 		<Item Name="Read Input and Output Config File.vi" Type="VI" URL="../subVIs/File Operations/Read Input and Output Config File.vi"/>
@@ -150,7 +154,9 @@
 		<Item Name="Convert RPM to Analog Voltage.vi" Type="VI" URL="../subVIs/DAQ/Convert RPM to Analog Voltage.vi"/>
 		<Item Name="Modbus Slave Write Server Register.vi" Type="VI" URL="../subVIs/Simulator/Modbus Slave Write Server Register.vi"/>
 		<Item Name="UI Servo Parameters Monitor .vi" Type="VI" URL="../subVIs/UI Screens/UI Servo Parameters Monitor .vi"/>
-		<Item Name="Motor_DAQNav.lvclass" Type="LVClass" URL="../Motor_DAQNav/Motor_DAQNav.lvclass"/>
+		<Item Name="Read INI Key values.vi" Type="VI" URL="../Config_Files_Operation/Read INI Key values.vi"/>
+		<Item Name="Create_Analog_Pair.vi" Type="VI" URL="../Config_Files_Operation/Create_Analog_Pair.vi"/>
+		<Item Name="Device Context Cluster.ctl" Type="VI" URL="../subVIs/Device Context/Device Context Cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
@@ -255,6 +261,8 @@
 				<Item Name="DWDT Digital to Binary U32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital to Binary U32.vi"/>
 				<Item Name="Digital to Binary.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Digital to Binary.vi"/>
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
+				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
+				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="DN4_GetErrorPosition.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/component/DN4_GetErrorPosition.vi"/>
