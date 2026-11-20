@@ -157,6 +157,12 @@
 		<Item Name="Read INI Key values.vi" Type="VI" URL="../Config_Files_Operation/Read INI Key values.vi"/>
 		<Item Name="Create_Analog_Pair.vi" Type="VI" URL="../Config_Files_Operation/Create_Analog_Pair.vi"/>
 		<Item Name="Device Context Cluster.ctl" Type="VI" URL="../subVIs/Device Context/Device Context Cluster.ctl"/>
+		<Item Name="Create Single AI.vi" Type="VI" URL="../Factory/Create Single AI.vi"/>
+		<Item Name="Create Single AO.vi" Type="VI" URL="../Factory/Create Single AO.vi"/>
+		<Item Name="Load Motor Scale Parameter.vi" Type="VI" URL="../Factory/Load Motor Scale Parameter.vi"/>
+		<Item Name="Load Scale Parameter.vi" Type="VI" URL="../Factory/Load Scale Parameter.vi"/>
+		<Item Name="Motor and Elevator Testbench.vi" Type="VI" URL="../Test Bench VIs/Motor and Elevator Testbench.vi"/>
+		<Item Name="Test Data Control.ctl" Type="VI" URL="../subVIs/Test/Test Data Control.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
