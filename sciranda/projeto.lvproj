@@ -113,15 +113,27 @@
 			<Item Name="AnalogOutput.lvclass" Type="LVClass" URL="../AnalogOutput/AnalogOutput.lvclass"/>
 			<Item Name="DAQNavi_AI.lvclass" Type="LVClass" URL="../DAQNavi_AI.lvclass/DAQNavi_AI.lvclass"/>
 			<Item Name="DAQNavi_AO.lvclass" Type="LVClass" URL="../DAQNavi_AO.lvclass/DAQNavi_AO.lvclass"/>
+			<Item Name="Modbus_Master.lvclass" Type="LVClass" URL="../Modbus_Master/Modbus_Master.lvclass"/>
+			<Item Name="Modbus_TCP.lvclass" Type="LVClass" URL="../Modbus_TCP/Modbus_TCP.lvclass"/>
+			<Item Name="Modbus_RTU.lvclass" Type="LVClass" URL="../Modbus_RTU/Modbus_RTU.lvclass"/>
+			<Item Name="Modbus_AI.lvclass" Type="LVClass" URL="../Modbus_AI/Modbus_AI.lvclass"/>
+			<Item Name="Modbus_AO.lvclass" Type="LVClass" URL="../Modbus_AO/Modbus_AO.lvclass"/>
 		</Item>
 		<Item Name="Device Layer" Type="Folder">
 			<Item Name="Motor.lvclass" Type="LVClass" URL="../Motor/Motor.lvclass"/>
 			<Item Name="Elevator.lvclass" Type="LVClass" URL="../Elevator/Elevator.lvclass"/>
 		</Item>
+		<Item Name="Servodrive" Type="Folder">
+			<Item Name="ServoDrive.lvclass" Type="LVClass" URL="../ServoDrive/ServoDrive.lvclass"/>
+			<Item Name="WEG_SCA06_Modbus.lvclass" Type="LVClass" URL="../WEG_SCA06_Modbus/WEG_SCA06_Modbus.lvclass"/>
+		</Item>
 		<Item Name="Test Bench VIs" Type="Folder">
 			<Item Name="Analog Test Bench.vi" Type="VI" URL="../Test Bench VIs/Analog Test Bench.vi"/>
 			<Item Name="Motor Test Bench.vi" Type="VI" URL="../Test Bench VIs/Motor Test Bench.vi"/>
 			<Item Name="Elevator Test Bench.vi" Type="VI" URL="../Test Bench VIs/Elevator Test Bench.vi"/>
+			<Item Name="Motor and Elevator Testbench.vi" Type="VI" URL="../Test Bench VIs/Motor and Elevator Testbench.vi"/>
+			<Item Name="Modbus Master Test Bench.vi" Type="VI" URL="../Test Bench VIs/Modbus Master Test Bench.vi"/>
+			<Item Name="Modbus Slave Testbench.vi" Type="VI" URL="../Test Bench VIs/Modbus Slave Testbench.vi"/>
 		</Item>
 		<Item Name="Config Files" Type="Folder" URL="../Config Files">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -161,8 +173,12 @@
 		<Item Name="Create Single AO.vi" Type="VI" URL="../Factory/Create Single AO.vi"/>
 		<Item Name="Load Motor Scale Parameter.vi" Type="VI" URL="../Factory/Load Motor Scale Parameter.vi"/>
 		<Item Name="Load Scale Parameter.vi" Type="VI" URL="../Factory/Load Scale Parameter.vi"/>
-		<Item Name="Motor and Elevator Testbench.vi" Type="VI" URL="../Test Bench VIs/Motor and Elevator Testbench.vi"/>
 		<Item Name="Test Data Control.ctl" Type="VI" URL="../subVIs/Test/Test Data Control.ctl"/>
+		<Item Name="Producer Consumer Main.vi" Type="VI" URL="../Test Bench VIs/Producer Consumer Main.vi"/>
+		<Item Name="UI_Command.ctl" Type="VI" URL="../Test Bench VIs/UI_Command.ctl"/>
+		<Item Name="Command.ctl" Type="VI" URL="../Test Bench VIs/Command.ctl"/>
+		<Item Name="System_Telemetry.ctl" Type="VI" URL="../Test Bench VIs/System_Telemetry.ctl"/>
+		<Item Name="Consumer State.ctl" Type="VI" URL="../Test Bench VIs/Consumer State.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
@@ -489,30 +505,32 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/My Application</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Users/lincoln.lucio/Documents/Lincoln/Documentos Pessoais/meus docs/Projetos pessoais/Projeto Sciranda/builds/Application</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2549CA3F-5171-466C-AB42-1F20C8F9B5A8}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application/Application.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Users/lincoln.lucio/Documents/Lincoln/Documentos Pessoais/meus docs/Projetos pessoais/Projeto Sciranda/builds/Application/Application.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Users/lincoln.lucio/Documents/Lincoln/Documentos Pessoais/meus docs/Projetos pessoais/Projeto Sciranda/builds/Application/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A3BB18DD-583D-448A-BDD8-5C0B20177660}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{915382F1-D290-4108-9D51-AA2B7E3471A0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main UI.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">J.Assy</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Config Files/hardware_config.ini</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">My Application</Property>
 				<Property Name="TgtF_internalName" Type="Str">My Application</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026 J.Assy</Property>
 				<Property Name="TgtF_productName" Type="Str">My Application</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{F137B97D-36B1-46EE-B3E5-CB9A74F6BC2F}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
